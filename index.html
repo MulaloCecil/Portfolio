@@ -42,24 +42,31 @@
       }
 
       .content {
-        display: flex;
-        align-items: center;
-        width: 50%;
-      }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
 
-      .content h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
 
-      .content p {
-        font-size: 16px;
-        margin-bottom: 0;
-      }
+.text h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
-      img {
-        width: 50%;
-      }
+.text p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+img {
+  
+  border-radius: 50%;
+}
 
       footer {
         background-color: #333;
@@ -100,25 +107,38 @@
     </header>
 
     <main>
-      <!-- <video
-        src="./Assets/Vids/video.mp4"
-        controls
-        style="
-          margin-bottom: 20px;
-          border: 5px solid #05386b;
+      <table id="mainTable">
 
-          object-fit: cover;
-          width: 100%;
-        "
-      ></video> -->
-      <div class="content">
-        <div>
-          <h1>Heading</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <img src="./Assets/Img/image.png" alt="Image" />
-      </div>
-    </main>
+          <!-- <tr>
+              <td colspan="2">
+                  <video controls poster="./assets/img/thumbnails.jpeg"
+                      src="./assets/vid/videoplayback (1).mp4"></video>
+              </td>
+          </tr> -->
+
+          <tr>
+              <td width="50%" align="center">
+                  <div class="bioBox">
+                      <h1><b>MULALO C TSHIGOBA</b></h1>
+                      <p>I would describe myself as a hard working person who thrives at the chance of challenge at work. 
+                        I am an Energetic, Ambitious person who has developed a mature and responsible approach to any task that I undertake,
+                        or situation that I am presented with. I always like to work quickly but neatly so that I can get the task I am working 
+                        on done in a professional and efficient manner.<br><br>
+                       I took a part at the Hackathon 2018 Health hack where I was developing a system, which will help patients
+                        to make online appointments before going to the health facilities. I like to think I am someone who works 
+                        well alongside others and easy to get along with as I am a sociable person.</p>
+                      <a href="./about.html">
+                          <button class="btn">Learn more...</button>
+                      </a>
+                  </div>
+              </td>
+              <td align="right">
+                  <img id="userImage" src="./Img/me.jpg" alt="">
+              </td>
+          </tr>
+      </table>
+
+  </main>
 
     <footer>
       <div>
@@ -129,8 +149,8 @@
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.382361435181!2d-74.0060
-      87!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f0f7f5c95d%3A0x2edf
-      ab0dbb4d5287!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1628873477119!5m2!1sen!2suk"
+          87!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259f0f7f5c95d%3A0x2edf
+          ab0dbb4d5287!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1628873477119!5m2!1sen!2suk"
           width="400"
           height="300"
           style="border: 0"
